@@ -8,7 +8,6 @@ import vista.frmVisitas;
 //3- Heredar de la clase que detecta las acciones
 public class ctrlVisitas implements MouseListener{
     
-    
     //1- Mandar a llamar a las otras capas (modelo y vista)
     private Visitas modelo;
     private frmVisitas vista;
@@ -18,7 +17,8 @@ public class ctrlVisitas implements MouseListener{
         this.modelo = modelo;
         this.vista = vista;
 
-        vista.btnAgregar.addMouseListener(this);        
+        vista.btnAgregar.addMouseListener(this);   
+        modelo.Mostrar(vista.jtbPacientes);
     }
 
     @Override
@@ -29,6 +29,7 @@ public class ctrlVisitas implements MouseListener{
             modelo.setEspecialidad(vista.txtEspecialidad.getText());
             
             modelo.Guardar();
+            modelo.Mostrar(vista.jtbPacientes);
         }
         
         
