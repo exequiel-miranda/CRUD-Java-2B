@@ -8,6 +8,7 @@ import vista.frmVisitas;
 //3- Heredar de la clase que detecta las acciones
 public class ctrlVisitas implements MouseListener{
     
+    
     //1- Mandar a llamar a las otras capas (modelo y vista)
     private Visitas modelo;
     private frmVisitas vista;
