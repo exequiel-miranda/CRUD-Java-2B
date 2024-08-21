@@ -18,6 +18,7 @@ public class frmVisitas extends javax.swing.JFrame {
      */
     public frmVisitas() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
     
     public static void initFrmVisitas(){
@@ -26,9 +27,10 @@ public class frmVisitas extends javax.swing.JFrame {
         frmVisitas vista = new frmVisitas();
         ctrlVisitas controlador = new ctrlVisitas(modelo, vista);
         
-        vista.setVisible(true);
-        
+        vista.setVisible(true);    
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
